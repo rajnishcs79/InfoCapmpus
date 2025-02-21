@@ -1,0 +1,603 @@
+ Date :- 08/02/2025
+                              Java Full Stack Developer
+	=================================================================						  
+	
+     Front-end Developer
+	 ->HTML,CSS, JAVASCRIPT, BOOTSTRAP
+	  ->Angular 
+	 
+      Backend Developer	 
+	  -> Core java
+	  ->ADV JAVA(Servlet,JSP, jdbc)
+	  ->Spring-boot
+	  ->Spring Rest
+	  ->Microserces
+	  ->Hibernate
+	  ->java8
+	  
+      Database 
+	  ->mySql
+	  
+      Testing
+
+	  ->junit
+	  ->Mockito
+	  ->Power Mockito
+	
+	  
+      Deployment 
+	  
+          ->Go-live 
+	  
+	  
+	  
+	  Real Time Tools:-
+	  ->putty  ->  linux comman e.g:- ls -ltr ,grep -a 'logService' WarehouseApp.log , tail -f WarehouseApp.log
+	  ->winCp  -> server ip, username, password
+	  ->postman
+	  ->jenkens
+	  ->Docker
+	  ->git Command 
+	  ->maven
+	  ->jira 
+	  ->loggin
+	  ->sts/eclipse tools
+	  ->Kafka
+	  ->log4j
+	  
+	  
+	  
+	  
+	  Devlopment Artitecture
+	  
+	  1.Monolitic application
+	   -> All module in same project. 
+	  2.Microserces application
+	  ->each service will be independent.
+	  ->Developer need to focus and develope only independent services.
+	  ->testing nedd to do only for services which is devloped by developer.
+	  ->production : we have to deploy only independent services which we have developed.
+	  
+	  
+	  
+	  Re-Generate Digio Esing
+	  -------------------------
+	  ->Sent Digio Esing link to customer
+	  ->Loan Agreements
+	  ->Sancation Letters
+	  
+	  
+	  ====================================
+	  
+	 =>Extenal api's
+	 ----------------
+	 ->SMS Axiom Sevice :- Sent otp/sms to customer.
+	 ->Email Sevices    :- Sent Eamil to customer
+	 ->DMS (Document Manangement Server) :- Store any document on server, Once document uploaded it will return doc id. Using doc id we can able to access Document.
+	 ->Adhar valut :- Verify addhar card where it is valid or not.
+	 ->Pan Verification (NDLS api's) :- Verify the PAN card is valid or not.
+	 ->Income verification :- (Perfios api's) -> Verify income details of applicant who has applied for a loan.
+	 ->Kyc Verification :- (Hyper-verse apis) -> Verify the KYC details of applicatn who has applied for a loan.
+	 ->Beuru Check :-(Cibil ----->Crisp, CIBIL,Equafax) ->Check Customer cibil score.
+	 ->Payu Money :- Provide payment gateway to customer to make their emi's payment.
+         ->E-Mandate :- Setup the emandate to customer account.
+         ->Digio :- Take e-sing of Loan Agreement/Sanction Letters.
+         ->Penny check :- Credit Rs.1 to customer account to verify account details.
+	 
+	 
+	
+	 
+	 =>Senario's (Customer wants Personal loan )
+	 
+	 ->income 
+	 ->Cusmtomer Kyc -->
+	 
+	 
+	  =>Type of Companies
+	  1.Service Based Companies
+	  
+	    e.g :- TCS,CogniZant, Infosys
+		
+		=>The company which provides services to others clients
+		
+		=>Based on the client requirment we have to develope a project.
+		 
+		
+	  
+	  2.Product Based Companies
+	 
+	   => We to work for Company requirment.Later they will launch their product in market.
+           e.g :- Google,Microsoft,Perfios
+	  
+	  
+	  
+	  =>Type Of Software
+	  -----------------
+	  1.System Software
+	  2.Embeded software
+	  3.Application software ->  
+	  4.Distributed Software  ->  
+
+	
+	  
+	  1.Banking Domain
+	  
+	    e.g : Icici Bank, PNB......
+	  
+	  2.Telecome Domain
+	  
+	  e.g : jio, Airtel...
+	  
+	  3.E-commerce Domain
+	   
+	   e.g : Amazon,Filpkart...
+	  
+	  4.Health Domain
+	  
+	   Appolo...Insurence
+	  
+	  
+	  
+	   Software Devlopment Life Cycle
+	  ------------------------------
+	  1.Requirment (Client)
+	  2.Requirment Analysis --> (BRD)
+	  3.Planning 
+	  4.Devlopment 
+	  5.Testing ->Uat
+	  6.Deployement
+	 
+	 
+	
+	 Client side ----- Server side  -------> database
+	 
+	 => Type of Environment
+	 1.Dev    ->>>Developer
+	 2.UAT      ---> Testing ---->QA Sing-off --->  (client)UAT sign-off
+	 3.PRE-PROD  --> Sanity
+	 4.PROD  
+	  
+	
+	  
+ Date :- 08/02/2025	               => Core java <=
+================================================================================================
+
+   Gson gson=new Gson();
+   
+   java object ===> xml ---------->JAXB
+   xml <====  java object ---------->JAXB
+   
+   
+   java object ===> json ---------->JACSON
+   json <====   java object ---------->JACSON
+   
+   
+   Sonar Qube ---> Check code quality.
+   
+  =============================================
+  
+  
+   
+   e.g:- Class 
+   
+   public class Product
+   {
+      private int productId;
+	  private String productName;
+	  private String productPrice;
+	  private String productManfactureDate;
+	  private String productExpDate;
+	  private String productLocation;
+	
+   }
+   
+   Product product=new Product();  ----> Create object of Product class.
+   
+   product.gc();  -->Garbage Collector :- Collect unused memory space.
+   
+
+   =>How to do Request Validation in java
+  
+   if(productId !=null && productId.isEmpty()){
+   
+     //execute the logic
+   
+   }
+
+   ========================
+   Types of Class
+   1.Pre-defined class  -------->  Object :- Supper Class
+
+      e.g : System,Scanner etc...
+
+   2.User defined class ---> will create User-Defined as per our requirment
+
+      e.g : 
+	    public class Product
+            {
+                 private int productId;
+	         private String productName;
+	         private String productPrice;
+	         private String productManfactureDate;
+	         private String productExpDate;
+	         private String productLocation;
+	
+           }
+
+
+   =============================================
+  => To Create Java Program
+  
+  1. package details
+  2.Create Class as per requirment
+  3.Create Variable 
+  4.Create Method 
+  3. main method
+  4.To print the output in console
+  
+  
+  =>what is Variable 
+  
+   ->Variable is container to store the values.
+   
+   ->To declear variable we have to follow camel case notation.
+   
+      e.g :- String productName="Mobile";
+	  
+   ->Types of Variable
+      -----------------
+     1.Instance Variable
+     2.Static Variable
+     3.Local Variable	 
+	 
+
+    1.Instance Variable :- A variable which outside the method is called Instance Variable.It will store in Heap Area.
+	  
+	  e.g :       public class Demo{
+				 int x=10;
+				 
+			 }
+   
+      2.Static Variable :- A variable which is outside the method and decleared with static keyoword is called Static Variable.It will store in Method Area.
+	  
+	 e.g :        public class Demo{
+				 static String name ="Ravi";
+				 
+				 
+				 public static void main(String[] args) 
+                                 {
+                                 }
+		        {
+		       
+  
+      3.Local Variable : A variable which is inside the method is called Local Variable.It will store in Stack Area.
+	  
+	  
+	            e.g :     public class Demo{
+				
+				 
+				 public static void main(String[] args) 
+		                 {
+					   String name ="Ravi";
+		       
+		                 }
+				 
+			      }
+
+  =>Method e.g 
+
+ 1.Static Method
+  
+  => public static void checkBalance(){
+	  
+	  
+  }
+  
+ 2.Instance Method
+
+  public void checkBalance(){
+	   
+  }
+   
+====================================
+
+public class CommonUtility{
+	
+	String request="Bangalre";
+	public static String encryption(String request){        ------>Static Method
+	  
+	 return "sdlfjlasdjlsdjfsddfsjlsdjsd"; 
+  }
+
+
+       String request="sdlfjlasdjlsdjfsddfsjlsdjsd";  
+  public static String decryption(String request){             ------>Instance Method
+	  
+	 return "Bangalre";  
+  }
+	
+}
+	
+==================================================================
+15/02/2025
+                      Identifier
+----------------------------------------------------------------
+
+Identifier : It is used to identify the vaiable,class,object and method.
+
+
+  e.g:-
+  
+  productName ---> variable name
+  ProductName ----> class
+  
+  productName(String name){   ----> Method
+  
+  }
+
+  
+  1.Variable Name: For storing data.
+      	Example: int age;
+		
+  2.Method Name: For defining actions.
+	    Example: void calculateSum()
+		
+  3.Class Name: For defining the blueprint of an object.
+	    Example: class Student {}
+		
+  4.Object Name: Instance of a class.
+	    Example: Student student1 = new Student();
+		
+  5.Constants: Final variables are usually written in uppercase.
+       Example: final int MAX_COUNT = 100;
+	   
+	   
+============================================================================
+
+                Data Types in Java    
+		------------------
+
+Data Type : A data type defines the type of data that a variable can hold.
+
+
+
+	1. Primitive Data Types
+        2. Reference Data Types		
+	
+
+   	1. Primitive Data Types :- The size of data type is already defined.
+	
+	     1.Numaric Data Type:-
+		   	
+		    byte: 1 byte,   ----->  range: -128 to 127.
+	        short: 2 bytes, ----->  range: -32,768 to 32,767.
+	        int: 4 bytes,   ----->  range: -2^31 to 2^31-1.
+	        long: 8 bytes,  ------> range: -2^63 to 2^63-1.
+			
+	   
+		 2.Character Data Type:-
+		  
+		    e.g: char grade = 'A'   ---->char: 2 bytes
+		    
+		    
+		 3.Float Data Type:-
+		        
+		   float: 4 bytes,  ------>stores fractional numbers.
+	       double: 8 bytes, ------> stores double precision fractional numbers.
+		   
+		    
+		 1.Boolean Data Type:-
+	        
+			boolean: 1 bit,   ------>stores true or false.
+	
+	
+	e.g :- Data Types:-
+	
+	
+	public class DataType {
+	
+	
+	public static void main(String[] args) {
+
+		// Primitive data types
+		int age = 25; // Integer type
+		double salary = 45000.0000000023; // double data type
+		float number=25000.025f; //Float data type
+		char grade = 'A'; // Character type
+		boolean isEmployed = true; // Boolean type
+		
+
+		// Printing values
+		System.out.println("Integer Data Type : " + age);
+		System.out.println("Float Data Type :"+number);
+		System.out.println("Double Data Type : " + salary);
+		System.out.println("Character Data Type : " + grade);
+		System.out.println("Boolean Data Type :" + isEmployed);
+		
+	}
+
+}
+	
+	
+  2. Reference Data Types:-
+  
+  
+     e.g :- public ProductDetails productDetails;
+  
+
+   •	Examples: Classes, arrays, interfaces, and strings.
+   
+   
+  =>Addition of two numbers, Take values from user Input.	
+
+  
+===============================================================================================
+ 16/02/2025                   
+                                 Blocks In Java
+------------------------------------------------------------------------------								 
+  
+  ->if we want to perform any task within the class level or object level.
+  
+   1.Static block
+   2.Instance block
+  
+e.g:-
+	
+	public class BlockDemo {
+	
+	static{
+		System.out.println("This is static block");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		{
+			System.out.println("This is instance block");
+		}
+		
+	}
+	
+}--->class block end.
+
+=================================================================================================
+                       Operators In java
+		      -------------------
+->If we want to perform any arthematic and logical operations. 					   
+					   
+	e.g:- Arthematic -> c =a + b 
+
+
+	      Logical ->  
+		   
+		    if(productReq !=null && productReq.size() > 0)
+			{
+				//Perform some task
+			}
+	
+	
+	1. Arithmetic Operators : 
+	
+	-> +,-,*,/,% 
+	
+	2. Relational (Comparison) Operators
+	
+	-> Used to compare two values, and the result is a boolean (true or false).
+
+        ->    == : Equal to
+              != : Not equal to
+              >	 : Greater than
+              <	 : Less than
+             >=	 : Greater than or equal
+             <=	 : Less than or equal
+
+	
+	e.g: int a=10;
+             int b=5;
+   
+             if(a > b){
+              //true
+
+             }
+
+
+
+	
+	3. Logical Operators :-
+
+	->Used to perform logical operations (AND, OR, NOT) on boolean values.
+	
+	e.g :- if(productReq !=null && productReq.size() >0){
+		
+	}
+	
+	if(productReq !=null || productReq.size() >0){
+		
+	}
+	   
+	   0 && 0 = 0
+	   1 && 0 = 0
+	   
+	   
+	   0 || 0 = 0
+	   1 && 0 = 0
+	   
+	7. Ternary (Conditional) Operator
+	--------------------------
+	
+	
+	int a=2;
+	int b=5;
+                 (a > b) ? a : b
+	                                           
+												
+	      e.g: ternory operation  (2 > 5) ? a : b
+				
+				
+				
+												
+  implicit type casting ---> default
+  Explecit type casting  --->programmer
+     
+==============================================================================================
+                    Methods
+ -------------------------------------------
+ 
+ A method in Java is a block of code designed to perform a specific task. Methods are reusable, making code modular, easier to read, and maintain.
+	
+	1.Pre-defined Method
+	2.User defined Method
+	
+ 1.Pre-defined Method : The method which is already define in java, you have just use as per your requirments.
+ 
+            e.g:- println("This is pre-defined");
+			      Math.addExact(10, 20);
+
+
+
+             A.Instance Method
+             B.Static Method
+				  
+				  
+ 2.User defined Method : A method which is defined by programmer as per our requirment.
+
+           e.g: - add(int a, int b){
+			    
+		   }
+
+         A.Instance Method
+         B.Static Method
+   
+   
+=> Components of a Method :-
+
+     1.	Access Modifier: Defines the method's visibility (e.g., public, private, protected, or package-private).
+     2.	Return Type: Specifies the type of value the method will return (e.g., int, String, void if no value is returned).
+     3.	Method Name: Identifies the method; must follow naming conventions (e.g., camelCase).
+     4.	Parameters (Optional): Inputs passed to the method.
+     5.	Method Body: Contains the logic/code that the method executes.
+     6.	Return Statement: Specifies the value returned by the method (optional for void methods).
+
+
+e.g:-
+
+    public String productDetails(String name){
+		
+		//set of operation
+		
+		return "Mobile";
+	}
+
+ 
+  	
+					
+
+    
+
+  
+
+
+
+	
+						
+					
